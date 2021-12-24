@@ -1,0 +1,101 @@
+body{
+background: rgb(158, 158, 158);
+
+}
+main{
+    display: grid;
+    grid-template-columns: 1ft 1fr 1fr 1fr;
+}
+section{
+    background-color: rgb(73, 9, 9);
+    grid-column: 1/4;
+}
+
+aside{
+    background-color: rgb(73, 9, 9);
+    grid-column: 4/5;
+    text-align: right;
+}
+
+article{
+    text-align: center;
+}
+#autor1{
+    color: floralwhite;
+    text-align: justify;
+    text-shadow: floralwhite;
+
+}
+h1{
+    background: rgb(78, 77, 77);
+    text-align: center;
+    color: honeydew;
+    font-size: 40px;
+        
+}
+
+p{
+
+    background-color: rgb(73, 9, 9);
+    text-align:left;
+    color: rgb(252, 248, 248);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;    
+
+}
+#par1{
+
+    background: rgb(73, 9, 9);
+    text-align: left;
+    color: rgb(250, 246, 246);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.menu{
+    padding: 0px 20px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.menu>li{
+    float: left;
+}
+
+.menu li a{
+    background-color: rgb(119, 20, 2);
+    color: thistle;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: wheat;
+    padding: 20px 80px;
+    display: block;
+}
+
+.menu li a:hover{
+    background-color: rgb(87, 78, 0);
+}
+
+.menu li ul{
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    min-width: 130px;
+}
+
+.menu li:hover > ul{
+    display: block;
+}
+
+.menu li ul li{
+    position: relative;
+}
+
+.menu li ul li ul{
+    right: 130px;
+}
+
